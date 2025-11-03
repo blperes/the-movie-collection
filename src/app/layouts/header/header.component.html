@@ -1,0 +1,15 @@
+<div class="header-layout">
+<header class="header">
+  <h1 class="header-title">The Movie Collection</h1>
+  <div class="search-box">
+    <input type="text" placeholder="Buscar película" [(ngModel)]="searchTerm"/>
+    <button class="button-search" (click)="onSearch()">
+      Buscar
+    </button>
+  </div>
+</header>
+
+<main class="content">
+  <router-outlet></router-outlet>
+</main>
+</div>

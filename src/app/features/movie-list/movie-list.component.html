@@ -1,0 +1,13 @@
+<div class="results-container" *ngIf="searchTerm">
+  <h1 class="results">Resultados para "{{ searchTerm }}"</h1>
+</div>
+
+<div class="movies-container">
+  <div class="movie-card" *ngFor="let movie of movies">
+    <h2>{{ movie.Title +  " (" + movie.Year + ")" }}</h2>
+  </div>
+</div>
+
+<div class="no-results" *ngIf="movies.length === 0 && searchTerm">
+  <p>No se encontraron resultados para "{{ searchTerm }}"</p>
+</div>
