@@ -23,4 +23,10 @@ export class MoviesService {
     return this.http.get(url);
   }
 
+  getMovieById(id: string | null) {
+    const url = `${this.apiUrl}?apikey=${this.apiKey}&i=${id}`;
+    return this.http.get(url);
+  }
+
+
 }

@@ -1,0 +1,45 @@
+.return {
+  padding: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  cursor: pointer;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 40px;
+  align-content: center;
+  justify-content: center;
+}
+
+.movie-title-poster{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+  gap: 20px;
+  font-family: var(--font-heading);
+  text-align: start;
+  color: var(--color-secondary);
+}
+
+.movie-poster {
+  border: 3px solid var(--color-secondary);
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  font-family: var(--font-body);
+  color: var(--color-secondary);
+}
+
+.movie-details.p {
+  margin: 10px;
+}

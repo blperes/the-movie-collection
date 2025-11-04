@@ -21,6 +21,14 @@
   font-family: var(--font-heading);
 }
 
+.movie-title {
+  cursor: pointer;
+}
+
+.movie-title:hover {
+  text-decoration: underline;
+}
+
 .no-results {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -36,5 +44,4 @@
   font-family: var(--font-heading);
   font-size: 20px;
   color: var(--color-secondary);
-
 }

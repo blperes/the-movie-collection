@@ -4,6 +4,7 @@ import {AppComponent} from './app.component';
 import {HomepageComponent} from './features/homepage/homepage.component';
 import {BlankComponent} from './layouts/blank/blank.component';
 import {HeaderComponent} from './layouts/header/header.component';
+import {MovieDetailsComponent} from './features/movie-details/movie-details.component';
 
 export const routes: Routes = [
   {
@@ -17,7 +18,8 @@ export const routes: Routes = [
     path: '',
     component: HeaderComponent,
     children: [
-      { path: 'movie-list', component: MovieListComponent }
+      { path: 'movie-list', component: MovieListComponent },
+      { path: 'movie/:id', component: MovieDetailsComponent}
     ]
   }
 ];

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MoviesService} from '../../services/movies.service';
 import {CommonModule, NgFor} from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-movie-list',
@@ -16,7 +17,14 @@ export class MovieListComponent implements OnInit {
   searchTerm: string = '';
   isLoaded: boolean = false;
 
-  constructor(private moviesService: MoviesService) { }
+  constructor(private moviesService: MoviesService, private router: Router) { }
+
+  showMovieDetails(id: string) {
+    this.router.navigate(['/movie', id]);
+
+  }
+
+
 
   ngOnInit() {
     this.moviesService.searchTerm$.subscribe(term => {
@@ -34,4 +42,5 @@ export class MovieListComponent implements OnInit {
       }
     });
   }
+
 }

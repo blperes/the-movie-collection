@@ -3,8 +3,8 @@
 </div>
 
 <div class="movies-container" *ngIf="movies.length > 0 && isLoaded">
-  <div class="movie-card" *ngFor="let movie of movies">
-    <h2>{{ movie.Title +  " (" + movie.Year + ")" }}</h2>
+  <div class="movie-card"  *ngFor="let movie of movies">
+    <h2 class='movie-title' (click)="showMovieDetails(movie.imdbID)">{{ movie.Title +  " (" + movie.Year + ")" }}</h2>
   </div>
 </div>
 
