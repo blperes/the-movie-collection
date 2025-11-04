@@ -26,6 +26,7 @@
   gap: 0.5rem;
   flex: 1;
   min-width: 0;
+
 }
 
 .search-box input {
@@ -35,6 +36,9 @@
   padding: 0.5rem 1rem;
   font-family: var(--font-body);
   background-color: var(--color-primary);
+  border-radius: 10px;
+  border-color: black;
+  font-size: 14px;
 }
 
 .button-search {

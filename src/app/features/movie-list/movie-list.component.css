@@ -27,3 +27,14 @@
   margin-left: 40px;
   font-family: var(--font-heading);
 }
+
+.initial-message {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 50px;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--color-secondary);
+
+}
