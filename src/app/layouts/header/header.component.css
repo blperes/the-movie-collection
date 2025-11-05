@@ -37,12 +37,12 @@
   font-family: var(--font-body);
   background-color: var(--color-primary);
   border-radius: 10px;
-  border-color: black;
+  border: none;
   font-size: 14px;
 }
 
 .button-search {
-  border-left: none;
+  border: none;
   justify-content: center;
   padding: 0.5rem 0.5rem;
   background-color: var(--color-primary);

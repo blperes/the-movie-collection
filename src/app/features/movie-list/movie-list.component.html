@@ -1,5 +1,5 @@
 <div class="results-container" *ngIf="searchTerm && isLoaded">
-  <h1 class="results">Resultados para "{{ searchTerm }}"</h1>
+  <h1 class="results">Results for "{{ searchTerm }}"</h1>
 </div>
 
 <div class="movies-container" *ngIf="movies.length > 0 && isLoaded">
@@ -9,9 +9,9 @@
 </div>
 
 <div class="no-results" *ngIf=" isLoaded && movies.length === 0 && searchTerm">
-  <p>No se encontraron resultados para "{{ searchTerm }}"</p>
+  <p>No results were found for "{{ searchTerm }}"</p>
 </div>
 
 <div class="initial-message" *ngIf="!searchTerm">
-  <p>Comienza buscando tus películas favoritas usando el buscador superior</p>
+  <p>Start by searching for your favorite movies using the search bar above</p>
 </div>
