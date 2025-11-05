@@ -25,7 +25,7 @@ export class MovieDetailsComponent implements OnInit {
 
     this.moviesService.getMovieById(id).subscribe({
       next: (data: any) => {
-        this.movie = data; // guardamos los datos recibidos
+        this.movie = data;
       },
       error: (err) => {
         console.error('Error al obtener detalles de la película:', err);
