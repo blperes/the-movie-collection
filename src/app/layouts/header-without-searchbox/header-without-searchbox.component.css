@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 150px;
+  align-items: center;
+  gap: 15rem;
+  padding: 0 3rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: var(--font-heading);
+  background-color: var(--color-secondary);
+}
+
+.header-title {
+  color: var(--color-primary);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.content {
+  background-color: var(--color-primary);
+  min-height: calc(100vh - 150px);
+}
