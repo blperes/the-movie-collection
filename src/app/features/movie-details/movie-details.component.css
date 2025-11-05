@@ -13,6 +13,8 @@
 
 .movie-info {
   display: flex;
+  flex-direction: row;
+  align-content: center;
   gap: 40px;
   padding: 40px;
   margin-top: 10px;
@@ -39,7 +41,7 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
-  margin: 0;
+  width: 500px;
 }
 
 .movie-poster {
@@ -73,16 +75,26 @@
   font-family: var(--font-body);
   font-size: 15px;
   color: black;
+  text-align: center;
 }
 
 .info{
   border: 2px solid #ffdacf;
   border-radius: 12px;
   padding: 20px;
+  width: 300px;
 }
 
 .info2{
   border: 2px solid #ffdacf;
   border-radius: 12px;
   padding: 20px;
+  width: 800px;
+}
+
+.text3 {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: black;
+  text-align: start;
 }
